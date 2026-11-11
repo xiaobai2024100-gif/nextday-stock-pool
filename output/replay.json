@@ -1,27 +1,27 @@
 {
  "meta": {
-  "start": "2025-11-10",
-  "end": "2026-11-10",
+  "start": "2025-11-11",
+  "end": "2026-11-11",
   "strategy": "T日收盘选股 → T+1开盘竞价买入 → T+2收盘卖出（14:55）",
   "initial_capital": 1000000.0,
-  "base_date": "2025-11-07",
+  "base_date": "2025-11-10",
   "rules": "T+1开盘买入/T+2收盘卖出（14:55）/复利/佣金万2.5+印花税万5+滑点千1",
-  "generated": "2026-11-11 06:45:22",
+  "generated": "2026-11-11 17:04:25",
   "note": "复用回测引擎, 指标仅用截至当日数据; 买入取 T+1 真实开盘价, 卖出按 T+2 开盘/收盘两条腿加权(比例见每笔 sell_frac_open), 收益含佣金万2.5+印花税万5+滑点千1; 跨区间边界的持仓(区间前买入/区间后卖出)不计入成交明细, 但其盈亏已体现在起点与终点净值中"
  },
  "summary": {
-  "n_trades": 49,
+  "n_trades": 50,
   "n_win": 28,
-  "win_rate": 57.1,
-  "avg_ret_pct": 1.53,
-  "sum_ret_pct": 74.89,
+  "win_rate": 56.0,
+  "avg_ret_pct": 1.45,
+  "sum_ret_pct": 72.37,
   "best": 18.13,
   "worst": -7.03,
-  "range_ret_pct": 119.59,
+  "range_ret_pct": 121.52,
   "range_mdd_pct": -15.88,
-  "base_date": "2025-11-07",
-  "base_nav": 1144659.0,
-  "end_nav": 2513585.0
+  "base_date": "2025-11-10",
+  "base_nav": 1132005.0,
+  "end_nav": 2507601.0
  },
  "trades": [
   {
@@ -225,7 +225,7 @@
   {
    "signal_date": "20260108",
    "code": "601869.SH",
-   "name": "长飞光纤",
+   "name": "XD长飞光",
    "rank": 1,
    "pool": "main",
    "strategy": "dip",
@@ -511,7 +511,7 @@
   {
    "signal_date": "20260309",
    "code": "605033.SH",
-   "name": "美邦股份",
+   "name": "XD美邦股",
    "rank": 1,
    "pool": "main",
    "strategy": "dip",
@@ -1101,13 +1101,31 @@
    "gap_pct": -2.85,
    "pool_n": 11,
    "pos_frac": 0.4
+  },
+  {
+   "signal_date": "20261109",
+   "code": "002727.SZ",
+   "name": "一心堂",
+   "rank": 1,
+   "pool": "main",
+   "strategy": "dip",
+   "buy_date": "20261110",
+   "buy_px": 13.04,
+   "fill": "open",
+   "sell_date": "20261111",
+   "sell_px": 12.75,
+   "sell_px_open": 12.75,
+   "sell_px_close": 12.75,
+   "sell_frac_open": 0.0,
+   "ret_pct": -2.52,
+   "note": "",
+   "score": 1.053,
+   "gap_pct": 0.46,
+   "pool_n": 4,
+   "pos_frac": 0.3
   }
  ],
  "curve": [
-  {
-   "d": "2025-11-10",
-   "nav": 1132005.0
-  },
   {
    "d": "2025-11-11",
    "nav": 1132005.0
@@ -2075,17 +2093,14 @@
   {
    "d": "2026-11-10",
    "nav": 2513585.0
+  },
+  {
+   "d": "2026-11-11",
+   "nav": 2507601.0
   }
  ],
- "base_nav": 1144659.0,
+ "base_nav": 1132005.0,
  "daily": [
-  {
-   "date": "20251110",
-   "trade_ok": true,
-   "alloc": null,
-   "fills": [],
-   "skipped": []
-  },
   {
    "date": "20251111",
    "trade_ok": true,
@@ -2578,7 +2593,7 @@
    "fills": [
     {
      "code": "601869.SH",
-     "name": "长飞光纤",
+     "name": "XD长飞光",
      "ret_pct": 0.14
     }
    ],
@@ -2962,7 +2977,7 @@
    "fills": [
     {
      "code": "605033.SH",
-     "name": "美邦股份",
+     "name": "XD美邦股",
      "ret_pct": 1.95
     }
    ],
@@ -4972,15 +4987,34 @@
   {
    "date": "20261110",
    "trade_ok": true,
+   "alloc": 0.3,
+   "fills": [
+    {
+     "code": "002727.SZ",
+     "name": "一心堂",
+     "ret_pct": -2.52
+    }
+   ],
+   "skipped": []
+  },
+  {
+   "date": "20261111",
+   "trade_ok": true,
    "alloc": null,
    "fills": [],
-   "skipped": []
+   "skipped": [
+    {
+     "code": "600872.SH",
+     "name": "中炬高新",
+     "note": "top1评分0.28低于门槛1.00"
+    }
+   ]
   }
  ],
  "monthly": [
   {
    "month": "202511",
-   "ret_pct": 6.6
+   "ret_pct": 7.79
   },
   {
    "month": "202512",
@@ -5028,10 +5062,10 @@
   },
   {
    "month": "202611",
-   "ret_pct": -0.46
+   "ret_pct": -0.7
   }
  ],
  "perf": {
-  "同期市场等权基准%": -11.26
+  "同期市场等权基准%": -10.73
  }
 }
