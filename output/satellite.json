@@ -3,9 +3,9 @@
  "strategy": "trend_single",
  "engine": "single",
  "init_capital": 100000.0,
- "capital": 97659.87,
+ "capital": 96752.41,
  "cash": 125.0,
- "nav": 0.9766,
+ "nav": 0.9675,
  "signal": null,
  "trades": [],
  "daily": [
@@ -50,11 +50,18 @@
    "action": "none",
    "code": "002230.SZ",
    "note": ""
+  },
+  {
+   "date": "20261113",
+   "nav": 0.9675,
+   "action": "none",
+   "code": "002230.SZ",
+   "note": ""
   }
  ],
  "legacy_batches": 0,
  "legacy_trades": [],
- "updated": "20261112",
+ "updated": "20261113",
  "params": {
   "mode": "lowvol",
   "mode_cn": "低波单吊",
@@ -92,9 +99,9 @@
    "hold_days": 10,
    "hwm": 12.54,
    "status": "holding",
-   "held_days": 1,
-   "px": 12.27,
-   "ret_pct": -1.2
+   "held_days": 2,
+   "px": 12.18,
+   "ret_pct": -1.92
   },
   {
    "code": "002920.SZ",
@@ -109,9 +116,9 @@
    "hold_days": 10,
    "hwm": 85.75,
    "status": "holding",
-   "held_days": 1,
-   "px": 81.97,
-   "ret_pct": -1.52
+   "held_days": 2,
+   "px": 81.99,
+   "ret_pct": -1.5
   },
   {
    "code": "002544.SZ",
@@ -126,9 +133,9 @@
    "hold_days": 10,
    "hwm": 15.6735,
    "status": "holding",
-   "held_days": 1,
-   "px": 15.07,
-   "ret_pct": -3.85
+   "held_days": 2,
+   "px": 14.68,
+   "ret_pct": -6.34
   },
   {
    "code": "002230.SZ",
@@ -143,32 +150,32 @@
    "hold_days": 10,
    "hwm": 38.3675,
    "status": "holding",
-   "held_days": 1,
-   "px": 37.29,
-   "ret_pct": -2.81
+   "held_days": 2,
+   "px": 37.12,
+   "ret_pct": -3.25
   }
  ],
  "pool": {
   "n": 4,
-  "base": 1681,
+  "base": 1618,
   "show": 4,
   "alt": [],
   "funnel": [
    {
     "label": "全市场",
-    "n": 5580
+    "n": 5579
    },
    {
     "label": "非ST·非停牌·上市满250日",
-    "n": 5215
+    "n": 5214
    },
    {
     "label": "成交额≥1.0亿",
-    "n": 2717
+    "n": 2564
    },
    {
     "label": "沪深主板白名单",
-    "n": 1681
+    "n": 1618
    }
   ],
   "rows": [
@@ -177,67 +184,67 @@
     "code": "002351.SZ",
     "name": "漫步者",
     "ivol20": 1.105,
-    "score": 26.3,
-    "dist_ma5": -0.55,
-    "pct": -2.15,
-    "close": 12.27,
-    "amount_yi": 2.41,
-    "vol_ratio": 0.81,
-    "turnover_rate": 3.7,
-    "mom20": 26.9,
-    "ra": 24.33
+    "score": 26.4,
+    "dist_ma5": -1.49,
+    "pct": -0.73,
+    "close": 12.18,
+    "amount_yi": 1.99,
+    "vol_ratio": 0.76,
+    "turnover_rate": 3.07,
+    "mom20": 24.0,
+    "ra": 21.76
    },
    {
     "rank": 2,
     "code": "002681.SZ",
     "name": "奋达科技",
-    "ivol20": 1.471,
-    "score": 1.9,
-    "dist_ma5": -0.22,
-    "pct": -3.4,
-    "close": 4.55,
-    "amount_yi": 2.39,
-    "vol_ratio": 1.14,
-    "turnover_rate": 3.3,
-    "mom20": 13.5,
-    "ra": 9.15
+    "ivol20": 1.476,
+    "score": 1.6,
+    "dist_ma5": -2.54,
+    "pct": -2.2,
+    "close": 4.45,
+    "amount_yi": 1.66,
+    "vol_ratio": 0.75,
+    "turnover_rate": 2.34,
+    "mom20": 10.4,
+    "ra": 7.06
    },
    {
     "rank": 3,
-    "code": "603786.SH",
-    "name": "科博达",
-    "ivol20": 1.544,
-    "score": 0.0,
-    "dist_ma5": 3.7,
-    "pct": -0.74,
-    "close": 39.11,
-    "amount_yi": 1.94,
-    "vol_ratio": 1.87,
-    "turnover_rate": 1.22,
-    "mom20": 11.6,
-    "ra": 7.52
+    "code": "002405.SZ",
+    "name": "四维图新",
+    "ivol20": 1.273,
+    "score": 15.1,
+    "dist_ma5": 0.41,
+    "pct": 0.32,
+    "close": 6.33,
+    "amount_yi": 2.84,
+    "vol_ratio": 1.24,
+    "turnover_rate": 1.88,
+    "mom20": 5.9,
+    "ra": 4.6
    },
    {
     "rank": 4,
     "code": "002248.SZ",
     "name": "华东数控",
-    "ivol20": 1.397,
-    "score": 6.9,
-    "dist_ma5": 2.28,
-    "pct": -1.61,
-    "close": 9.17,
-    "amount_yi": 1.5,
-    "vol_ratio": 1.19,
-    "turnover_rate": 5.26,
-    "mom20": 8.6,
-    "ra": 6.19
+    "ivol20": 1.415,
+    "score": 5.7,
+    "dist_ma5": 0.77,
+    "pct": -0.22,
+    "close": 9.15,
+    "amount_yi": 1.06,
+    "vol_ratio": 0.79,
+    "turnover_rate": 3.74,
+    "mom20": 6.4,
+    "ra": 4.52
    }
   ],
   "score_gate": 0.0,
   "ivol_cap": 0.0,
-  "date": "20261112",
+  "date": "20261113",
   "picked": "002351.SZ",
-  "gate_ok": true,
+  "gate_ok": false,
   "pick_note": ""
  },
  "signals": null
