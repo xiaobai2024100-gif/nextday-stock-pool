@@ -6,6 +6,25 @@
  },
  "records": [
   {
+   "publish_date": "2026-11-16",
+   "buy_date": "2026-11-17",
+   "sell_date": "2026-11-18",
+   "regime_ok": false,
+   "picks": [
+    {
+     "code": "603683.SH",
+     "name": "晶华新材",
+     "close": 16.35,
+     "pct": -4.66,
+     "reasons": "回调-4.7%、量比0.52(缩量)、20日动量23%、乖离-2.8%、换手6.8%、次日竞价深低开承接",
+     "pool": "main",
+     "strategy_cn": "主力·趋势缩量回调"
+    }
+   ],
+   "status": "待结算",
+   "config_fp": "528906607aec"
+  },
+  {
    "publish_date": "2026-11-13",
    "buy_date": "2026-11-16",
    "sell_date": "2026-11-17",
@@ -22,7 +41,10 @@
     }
    ],
    "status": "待结算",
-   "config_fp": "528906607aec"
+   "config_fp": "528906607aec",
+   "skip_chain": [
+    "第1名 龙旗科技: 缺口-0.9%未达承接线-2.5%"
+   ]
   },
   {
    "publish_date": "2026-11-12",
@@ -40,10 +62,13 @@
      "strategy_cn": "主力·趋势缩量回调"
     }
    ],
-   "status": "待结算",
+   "status": "无成交",
    "config_fp": "528906607aec",
    "skip_chain": [
     "第1名 太极股份: 缺口0.0%未达承接线-2.5%"
+   ],
+   "skipped_codes": [
+    "002368.SZ"
    ]
   },
   {
@@ -284,14 +309,32 @@
      "strategy_cn": "主力·趋势缩量回调"
     }
    ],
-   "status": "无成交",
+   "status": "已结算",
    "config_fp": "528906607aec",
-   "skip_chain": [
-    "第1名 松霖科技: 缺口-0.7%未达承接线-2.5%"
-   ],
-   "skipped_codes": [
-    "603992.SH"
-   ]
+   "skipped_codes": [],
+   "realized": {
+    "buy_date": "2026-11-02",
+    "sell_date": "2026-11-03",
+    "n_traded": 1,
+    "n_skipped": 0,
+    "avg_ret_pct": -4.51,
+    "win": 0
+   },
+   "executed": {
+    "rank": 1,
+    "code": "603992.SH",
+    "name": "松霖科技",
+    "buy_date": "2026-11-02",
+    "buy_px": 20.83,
+    "sell_date": "2026-11-03",
+    "sell_px": 19.95,
+    "ret_pct": -4.51,
+    "position_pct": 0.0,
+    "pos_note": "大盘中位数+0.0%而个股超额-4.2pp→不参与(个股独跌)",
+    "gap_pct": -0.71,
+    "pool_n": null,
+    "chain": []
+   }
   },
   {
    "publish_date": "2026-10-29",
