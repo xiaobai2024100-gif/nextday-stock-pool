@@ -6,6 +6,25 @@
  },
  "records": [
   {
+   "publish_date": "2026-11-20",
+   "buy_date": "2026-11-23",
+   "sell_date": "2026-11-24",
+   "regime_ok": false,
+   "picks": [
+    {
+     "code": "000700.SZ",
+     "name": "模塑科技",
+     "close": 13.11,
+     "pct": -3.74,
+     "reasons": "回调-3.7%、量比0.59(缩量)、20日动量10%、乖离-9.8%、换手5.4%、次日竞价深低开承接",
+     "pool": "main",
+     "strategy_cn": "主力·趋势缩量回调"
+    }
+   ],
+   "status": "待结算",
+   "config_fp": "528906607aec"
+  },
+  {
    "publish_date": "2026-11-19",
    "buy_date": "2026-11-20",
    "sell_date": "2026-11-23",
@@ -22,7 +41,10 @@
     }
    ],
    "status": "待结算",
-   "config_fp": "528906607aec"
+   "config_fp": "528906607aec",
+   "skip_chain": [
+    "第1名 永创智能: 缺口-2.5%未达承接线-2.5%"
+   ]
   },
   {
    "publish_date": "2026-11-18",
@@ -40,10 +62,13 @@
      "strategy_cn": "主力·趋势缩量回调"
     }
    ],
-   "status": "待结算",
+   "status": "无成交",
    "config_fp": "528906607aec",
    "skip_chain": [
     "第1名 日盈电子: 缺口0.5%未达承接线-2.5%"
+   ],
+   "skipped_codes": [
+    "603286.SH"
    ]
   },
   {
@@ -262,14 +287,32 @@
      "strategy_cn": "主力·趋势缩量回调"
     }
    ],
-   "status": "无成交",
+   "status": "已结算",
    "config_fp": "528906607aec",
-   "skip_chain": [
-    "第1名 金达威: 缺口-2.3%未达承接线-2.5%"
-   ],
-   "skipped_codes": [
-    "002626.SZ"
-   ]
+   "skipped_codes": [],
+   "realized": {
+    "buy_date": "2026-11-06",
+    "sell_date": "2026-11-09",
+    "n_traded": 1,
+    "n_skipped": 0,
+    "avg_ret_pct": 1.27,
+    "win": 1
+   },
+   "executed": {
+    "rank": 1,
+    "code": "002626.SZ",
+    "name": "金达威",
+    "buy_date": "2026-11-06",
+    "buy_px": 17.15,
+    "sell_date": "2026-11-09",
+    "sell_px": 17.42,
+    "ret_pct": 1.27,
+    "position_pct": 100.0,
+    "pos_note": null,
+    "gap_pct": -2.33,
+    "pool_n": null,
+    "chain": []
+   }
   },
   {
    "publish_date": "2026-11-04",
